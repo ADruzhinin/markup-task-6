@@ -3,7 +3,231 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
+    <input type="checkbox" id="w-settings" checked>
+    <input type="checkbox" id="w-visited" checked>
+    <input type="checkbox" id="w-humor" checked>
+    <input type="checkbox" id="w-tv" checked>
+    <input type="checkbox" id="w-auto-news" checked>
+    <input type="checkbox" id="w-weather" checked>
+    <input type="checkbox" id="w-traffic" checked>
+    <input type="checkbox" id="w-map" checked>
+    <input type="checkbox" id="w-poster" checked>
+    <input id="joke-1" type="radio" name="humor" checked>
+    <input id="joke-2" type="radio" name="humor">
+    <input id="joke-3" type="radio" name="humor">
+    <input id="joke-4" type="radio" name="humor">
+    <input id="joke-5" type="radio" name="humor">
+    <main>
+        <p class="city">
+            <span>Екатеринбург</span>
+        </p>
+        <section class="yandex-logo">
+            <img src="http://s.appleinsider.ru/2012/06/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.png"
+            alt="Яндекс">
+        </section>
+        <div class="news">
+            <p class="header_news">
+                <span class="SMI">Сейчас в СМИ</span>
+                <span class="Ekb">&nbsp; в Екатеринбурге</span>
+                <span class="info">&nbsp; 22 июня, суббота 13:37</span>
+            </p>
+            <ul>
+                <li>
+                    <a href="#">
+                        &nbsp;Минобороны РФ обвинило США в прямой поддержке террористов ИГ в Сирии
+                    </a>
+                </li>
+                <li>
+                    <a href="#">&nbsp;Мутко выразил возмущение работой арбитра на матче Россия - Испания</a>
+                </li>
+                <li>
+                    <a href="#">
+                        &nbsp;Комитет Генассамблеи ООН принял резолюцию по правам человека в Крыму
+                    </a>
+                </li>
+                <li><a href="#">&nbsp;Волкер и Сурков обсудили размещение миротворцев в Донбассе</a></li>
+                <li><a href="#">&nbsp;Профильный комитет Госдумы поддержал поправку о СМИ-иноагентах</a></li>
+            </ul>
+            <p class="rate">
+                <span class="name_currency">USD ЦБ</span> 59,62
+                <span class="name_currency">EUR ЦБ</span> 69,68
+                <span class="name_currency">НЕФТЬ</span> 62,04 − 1,68%
+                <span class="ellipsis" title="ещё"></span>
+            </p>
+            
+        </div>
+        <div class="ya-adv">
+            <img src="https://clck.ru/CBVBn" alt="adv">
+            <a href="#" class="adv-link">Браузер<br>без опасности</a>
+            <p class="adv-text">Технология Протект</p>
+        </div>
+        <article class="search">
+            <div class="sections">
+                <span class="section">Видео</span>
+                <span class="section">Картинки</span>
+                <span class="section">Новости</span>
+                <span class="section">Карты</span>
+                <span class="section">Маркет</span>
+                <span class="section">Переводчик</span>
+                <span class="section">Музыка</span>
+                <span class="section">ещё</span>
+            </div>
+            <form action="#" class="search-line">
+                <input type="text" name="searcher" id="searcher"><!--
+                --><input type="submit" value="Найти">
+            </form>
+            <div class="bottom-info">
+                <p class="find-everything">Найдётся всё. Например, <span>калькулятор</span></p>
+                <p class="adv-browser">Браузер с ускорением</p>
+            </div>
+            <img src="ad.jpg" alt="adv" class="car">
+        </article>
+        <div class="widget-column-1">
+            <section class="visited">
+                <p class="widget-header">Посещаемое</p>
+                <p><span>Маркет</span>-<span>китайская распродажа</span></p>
+                <p><span>Авто.ру</span>-<span>Туссан третьей серии</span></p>
+                <p><span>Недвижимость</span>-<span>продажа студии</span></p>
+                <p><span>Работа</span>-<span>охранником</span></p>
+                <p><span>Здоровье</span>-<span>врач на связи</span></p>
+                <p><span>Коллекции</span>-<span>как мелировать волосы</span></p>
+                <p><span>Авиабилеты</span>-<span>из Екатеринбурга</span></p>
+            </section>
+            <section class="humor">
+                <p class="widget-header">Лучшие анекдоты</p>
+                <div class="jokes">
+                    <p class="joke-1 joke">
+                        Коллега поставил статус в скайпе:
+                    — Вроде как C# — язык со сборкой мусора, но он ни разу не удалил ничего из моего кода.
+                    </p>
+                    <p class="joke-2 joke">
+                        Если кофе недостаточно бодрит по утрам, попробуйте вместе этого
+                        удалять одну случайную таблицу в БД на продакшене.
+                    </p>
+                    <p class="joke-3 joke">- Вас лечить хорошо или бесплатно?</p>
+                    <p class="joke-4 joke">В бар заходит бесконечное количество математиков.
+                            
+                            Первый просит литр пива. Второй просит пол-литра пива. Третий просит
+                            четверть литра пива.
+                            
+                            Бармен кричит «Прекратите!» и наливает два литра пива.</p>
+                    <p class="joke-5 joke">
+                        Автор раздела не несет никакой ответственности закачество шуток.
+                    </p>
+                </div>
+                <label for="joke-1" class="next">
+                    <span class="repeat">Показать ещё</span>
+                </label>
+                <label for="joke-2" class="next">
+                    <span class="repeat">Показать ещё</span>
+                </label>
+                <label for="joke-3" class="next">
+                    <span class="repeat">Показать ещё</span>
+                </label>
+                <label for="joke-4" class="next">
+                    <span class="repeat">Показать ещё</span>
+                </label>
+                <label for="joke-5" class="next">
+                    <span class="repeat">Показать ещё</span>
+                </label>
+            </section>
+        </div>
+        <div class="widget-column-2">
+            <section class="tv">
+                <p class="widget-header">Телепрограмма<img src="tv.jpg" alt="tv"></p>
+                <p>16:00 Понять. Простить. <span>41 Домашний</span></p>
+                <p>16:30 Место встречи <span>НТВ</span></p>
+                <p>16:30 Детективы <span>Пятый канал</span></p>
+                <p>16:30 Новости <span>РЕН ТВ</span></p>
+                <p>16:30 Гадалка <span>ТВ-3</span></p>
+                <p>16:30 Реальные пацаны <span>ТНТ</span></p>
+            </section>
+            <section class="auto-news">
+                <p class="widget-header">Автомобильные новости</p>
+                <div class="content">
+                    <p>Названы цены и комплектации обновленного кроссовера Volvo XC60 <span>20:21</span></p>
+                    <p>Новое купе Mercedes-Benz CLS представят 1 декабря<span>18:09</span></p>
+                    <p>В России подорожал лифтбек Skoda Rapid <span>01:12</span></p>
+                    <p>Geely в 2017 году рассчитывает на рост продаж на 60% <span>23:43</span></p>
+                    <p>
+                        Гибридный седан Honda Clarity Plug-in Hybrid оценили в 33 400 долларов
+                        <span>01:16</span>
+                    </p>
+                    <p>Продажи автомобилей KIA с пробегом в октябре выросли на 22% <span>11:30</span></p>
+                    <p>
+                        Porsche 911 Turbo S Exclusive с 607-сильным мотором вышел на тесты
+                        <span>00:01</span>
+                    </p>
+                    <p>Как завести машину, если сел аккумулятор <span>12:23</span></p>
+                    <p>
+                        Great Wall провел официальную презентацию нового кроссовера Haval H4
+                        <span>01:18</span>
+                    </p>
+                    <p>
+                        Лидером продаж купе и кабриолетов в России стала Mercedes-Benz
+                        <span>08:18</span>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="widget-column-3">
+            <section class="weather">
+                <p class="widget-header">Погода <img src="cloud.jpg" alt="cloud"><span>-3°C</span></p>
+                <p><span>Утро −3</span>, <span>день −1</span></p>
+            </section>
+            <section class="traffic">
+                <p class="widget-header">Пробки <img src="light.jpg" alt="light"><span>1 балл</span></p>
+                <p><span>На дорогах свободно</span></p>
+            </section>
+            <section class="map">
+                <p class="widget-header">Карта Екатеринбурга</p>
+                <p><span>Такси</span> <span class="tables">Расписания</span></p>
+                <p><span>Междугородние автобусы</span></p>
+            </section>
+            <section class="poster">
+                <p class="widget-header">Афиша</p>
+                <p>Субурбикон <span>премьера в чт</span></p>
+                <p>Последний рыцарь <span>приключения</span></p>
+                <p>Фиксики: Большой секрет <span>мультфильм</span></p>
+                <p>Тор: Рагнарёк <span>фэнтези</span></p>
+                <p>Убийство в восточном экспрессе <span>драма</span></p>
+                <p class="concert">Концерты - Brainstorm</p>
+            </section>
+        </div>
+        <aside>
+            <article class="blocks">
+                <label for="w-settings" class="settings">Настройка</label>
+                <section class="options">
+                    <label for="w-visited">Посещаемое</label>
+                    <label for="w-humor">Лучшие анекдоты</label>
+                    <label for="w-tv">Телепрограмма</label>
+                    <label for="w-auto-news">Автомобильные новости</label>
+                    <label for="w-weather">Погода</label>
+                    <label for="w-traffic">Пробки</label>
+                    <label for="w-map">Карта Екатеринбурга</label>
+                    <label for="w-poster">Афиша</label>
+                </section>
+            </article>
+            <form>
+                <p class="email">Почта</p>
+                <p class="create_mail">Завести почту</p>
+                <input type="text" name="login" class="login" placeholder="Логин">
+                <input type="password" name="password" class="password" placeholder="Пароль"><br>
+                <label for="other" class="label_other">
+                    <input type="checkbox" name="other" id="other" class="other">Чужой компьютер
+                </label><br>
+                <input type="submit" value="Войти" class="submit">
+                <span class="icon more" title="ещё"></span><!--
+                --><span class="icon tw" title="Twitter"></span><!--
+                --><span class="icon fb" title="Facebook"></span><!--
+                --><span class="icon vk" title="ВКонтакте"></span>
+            </form>
+        </aside>
+    </main>
 </body>
 </html>

@@ -1,0 +1,695 @@
+html
+{
+    height: 840px;
+}
+
+body,
+main
+{
+    font-family: Arial;
+    font-size: 15px;
+    height: 100%;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1.25fr 320px 320px 320px 1fr;
+    grid-template-rows: 240px 200px 400px;
+    grid-template-areas: 't n n d z'
+        'y s s s u'
+        'x a b c u';
+}
+
+input[name='humor'],
+input[id^='w-']
+{
+    display: none;
+}
+
+/*------ city -------*/
+
+.city
+{
+    grid-area: t;
+}
+
+.city span
+{
+    opacity: .5;
+    position: relative;
+    top: 10px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.city span:before
+{
+    font-family: FontAwesome, fantasy;
+    content: '\f124';
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.city span:hover
+{
+    opacity: 1;
+    color: #f00;
+}
+
+/*------ logo -------*/
+
+.yandex-logo
+{
+    grid-area: y;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.yandex-logo img
+{
+
+    margin-top: 30px;
+    align-self: flex-start;
+    width: 110px;
+}
+
+/*------ news -------*/
+
+.news
+{
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header_news
+{
+    margin: 0 0 0 15px;
+    cursor: pointer;
+}
+
+.header_news span:hover
+{
+    opacity: 1;
+    color: rgb(184, 0, 0);
+}
+
+.info
+{
+    font-size: 14px;
+    opacity: .5;
+}
+
+.Ekb
+{
+    opacity: .5;
+}
+
+.SMI,
+.Ekb
+{
+    color: #0054c0;
+    font-size: 22px;
+}
+
+.news ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.news li
+{
+    padding-top: 10px;
+}
+
+.news li:before
+{
+    content: '• ';
+}
+
+.news a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.news a:hover
+{
+    color: rgb(184, 0, 0);
+}
+
+.name_currency
+{
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.ellipsis
+{
+    opacity: .2;
+    margin-left: 15px;
+}
+
+.ellipsis:before
+{
+    font-family: FontAwesome, fantasy;
+    content: '\f141';
+    cursor: pointer;
+}
+
+.ellipsis:hover
+{
+    opacity: .6;
+}
+
+/*------ ADV -------*/
+
+.ya-adv
+{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ya-adv img
+{
+    width: 130px;
+    cursor: pointer;
+}
+
+.adv-link
+{
+    color: #0054c0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.adv-link:hover
+{
+    color: rgb(184, 0, 0);
+}
+
+.adv-text
+{
+    margin-top: 0;
+}
+
+/*------ Search -------*/
+
+.search
+{
+    grid-area: s;
+    margin-top: 10px;
+}
+
+.sections
+{
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    font-size: 17px;
+}
+
+.section
+{
+    color: #0054c9;
+}
+
+.section:hover,
+.find-everything span:hover
+{
+    opacity: 1;
+    color: rgb(184, 0, 0);
+    cursor: pointer;
+}
+
+.search-line
+{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.search-line input[type='text']
+{
+    border: 2px solid #ffdb4d;
+    width: 770px;
+    height: 32px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-line input[type='submit']
+{
+    padding-left: 0;
+    background: url(arrow.jpg);
+    font-size: 18px;
+    text-decoration: none;
+    border: 0;
+    height: 38px;
+    width: 82px;
+    cursor: pointer;
+    outline: none;
+}
+
+.find-everything,
+.adv-browser
+{
+    margin: 5px 0;
+}
+
+.find-everything
+{
+    margin: 5px 0;
+    float: left;
+    margin-left: 15px;
+}
+
+.find-everything span
+{
+    opacity: .5;
+}
+
+.adv-browser
+{
+    margin-right: 170px;
+    float: right;
+}
+
+.adv-browser:hover
+{
+    color: rgb(184, 0, 0);
+    cursor: pointer;
+}
+
+.car
+{
+    width: 780px;
+    margin-left: 15px;
+}
+
+/*------ Widgets -------*/
+
+.widget-column-1
+{
+    grid-area: a;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.widget-header
+{
+    color: #0054c9;
+    font-size: 20px;
+    margin: 15px 0 0;
+}
+
+.repeat:before
+{
+    font-family: FontAwesome, fantasy;
+    content: '\f01e';
+}
+
+.next
+{
+    color: #0054c9;
+    cursor: pointer;
+}
+
+input[id='joke-1']:checked ~ main .humor label:not([for='joke-2']),
+input[id='joke-2']:checked ~ main .humor label:not([for='joke-3']),
+input[id='joke-3']:checked ~ main .humor label:not([for='joke-4']),
+input[id='joke-4']:checked ~ main .humor label:not([for='joke-5']),
+input[id='joke-5']:checked ~ main .humor label:not([for='joke-1']),
+input[id='joke-1']:checked ~ main .joke:not(:nth-of-type(1)),
+input[id='joke-2']:checked ~ main .joke:not(:nth-of-type(2)),
+input[id='joke-3']:checked ~ main .joke:not(:nth-of-type(3)),
+input[id='joke-4']:checked ~ main .joke:not(:nth-of-type(4)),
+input[id='joke-5']:checked ~ main .joke:not(:nth-of-type(5))
+{
+    display: none;
+}
+
+.widget-header:hover,
+.visited span:hover,
+.weather span:hover,
+.traffic span:hover,
+.map span:hover,
+.concert:hover,
+.poster p:hover,
+.tv p:hover,
+.auto-news p:hover
+{
+    cursor: pointer;
+    color: rgb(184, 0, 0);
+}
+
+.joke
+{
+    line-height: 1.5;
+}
+
+.visited span:first-child
+{
+    font-weight: bold;
+}
+
+.widget-column-2
+{
+    grid-area: b;
+    font-size: 14px;
+}
+
+.auto-news
+{
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+}
+
+.content:before
+{
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    top: 38px;
+}
+
+.content:after
+{
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    bottom: 0;
+}
+
+.content:before,
+.content:after
+{
+    content: '';
+    height: 50px;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.content
+{
+    width: 300px;
+    height: 190px;
+    overflow: auto;
+}
+
+.tv span,
+.poster span,
+.auto-news span
+{
+    opacity: .5;
+    padding-left: 5px;
+}
+
+.widget-column-3
+{
+    grid-area: c;
+    font-size: 14px;
+}
+
+.weather span,
+.traffic span
+{
+    color: #000;
+}
+
+.tables
+{
+    padding-left: 25px;
+}
+
+.poster p
+{
+    margin: 10px 0;
+}
+
+.map span,
+.concert
+{
+    font-weight: bold;
+}
+
+/*------ Registration -------*/
+
+aside
+{
+    grid-area: z;
+    display: flex;
+    justify-content: flex-end;
+}
+
+aside form
+{
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    width: 200px;
+    height: 220px;
+    margin: 10px 10px 0 60px;
+    text-align: center;
+}
+
+.email
+{
+    width: 35%;
+    margin: 10px 0 20px 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.create_mail
+{
+    width: 50%;
+    margin: 10px 5% 20px 0;
+    float: right;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.create_mail:hover
+{
+    opacity: 1;
+}
+
+.email:hover,
+.create_mail:hover
+{
+    color: #f00;
+}
+
+.blocks
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3%;
+    right: 16%;
+    width: 210px;
+}
+
+input[id='w-settings']
+{
+    display: none;
+}
+
+.options
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+.options label
+{
+    padding: 2px 0 2px 10px;
+}
+
+.settings
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.settings:hover
+{
+    cursor: pointer;
+    color: rgb(184, 0, 0);
+}
+
+input[id='w-settings']:checked ~ main .options,
+input[id='w-visited']:not(:checked) ~ main .visited,
+input[id='w-humor']:not(:checked) ~ main .humor,
+input[id='w-tv']:not(:checked) ~ main .tv,
+input[id='w-auto-news']:not(:checked) ~ main .auto-news,
+input[id='w-weather']:not(:checked) ~ main .weather,
+input[id='w-traffic']:not(:checked) ~ main .traffic,
+input[id='w-map']:not(:checked) ~ main .map,
+input[id='w-poster']:not(:checked) ~ main .poster
+{
+    display: none;
+}
+
+label[for='w-visited']:before,
+label[for='w-humor']:before,
+label[for='w-tv']:before,
+label[for='w-auto-news']:before,
+label[for='w-weather']:before,
+label[for='w-traffic']:before,
+label[for='w-map']:before,
+label[for='w-poster']:before
+{
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    padding-right: 5px;
+    font-family: FontAwesome, fantasy;
+    content: '\f046';
+}
+
+input[id='w-visited']:not(:checked) ~ main label[for='w-visited']:before,
+input[id='w-humor']:not(:checked) ~ main label[for='w-humor']:before,
+input[id='w-tv']:not(:checked) ~ main label[for='w-tv']:before,
+input[id='w-auto-news']:not(:checked) ~ main label[for='w-auto-news']:before,
+input[id='w-weather']:not(:checked) ~ main label[for='w-weather']:before,
+input[id='w-traffic']:not(:checked) ~ main label[for='w-traffic']:before,
+input[id='w-map']:not(:checked) ~ main label[for='w-map']:before,
+input[id='w-poster']:not(:checked) ~ main label[for='w-poster']:before
+{
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    padding-right: 5px;
+    font-family: FontAwesome, fantasy;
+    content: '\f096';
+}
+
+input[id='w-visited']:not(:checked) ~ input[id='w-humor']:not(:checked) ~ main
+{
+    grid-template-areas: 't n n d z'
+        'y s s s u'
+        'x b c a u';
+}
+
+input[id='w-tv']:not(:checked) ~ input[id='w-auto-news']:not(:checked) ~ main
+{
+    grid-template-areas: 't n n d z'
+        'y s s s u'
+        'x a c b u';
+}
+
+input[id='w-visited']:not(:checked) ~ input[
+id='w-humor']:not(:checked) ~ input[
+id='w-tv']:not(:checked) ~ input[
+id='w-auto-news']:not(:checked) ~ main
+{
+    grid-template-areas: 't n n d z'
+        'y s s s u'
+        'x c a b u';
+}
+
+.login
+{
+    top: 5px;
+    margin-bottom: 10px;
+}
+
+.login,
+.password
+{
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    outline: none;
+    height: 30px;
+    width: 80%;
+}
+
+.login:focus
+{
+    margin-bottom: 9px;
+}
+
+.password:focus ~ .label_other
+{
+    margin-top: 19px;
+}
+
+.login:focus,
+.password:focus
+{
+    border-bottom: 2px solid rgb(255, 219, 77);
+}
+
+.other
+{
+    margin-left: 10px;
+}
+
+.label_other
+{
+    float: left;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.submit
+{
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.icon
+{
+    opacity: .2;
+    font-size: 24px;
+    margin: 20px 5px 0 3px;
+    float: right;
+}
+
+.icon:before
+{
+    font-family: FontAwesome, fantasy;
+    cursor: pointer;
+}
+
+.vk:before
+{
+    content: '\f189';
+}
+
+.fb:before
+{
+    content: '\f09a';
+}
+
+.tw:before
+{
+    content: '\f099';
+}
+
+.more:before
+{
+    content: '\f141';
+}
+
+.icon:hover
+{
+    opacity: .6;
+}
