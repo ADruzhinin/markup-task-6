@@ -70,7 +70,7 @@ input[id^='w-']
 .yandex-logo img
 {
 
-    margin-top: 30px;
+    margin-top: 25px;
     align-self: flex-start;
     width: 110px;
 }
@@ -83,18 +83,20 @@ input[id^='w-']
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: 14px;
 }
 
-.header_news
+.header-news
 {
+    width: 500px;
     margin: 0 0 0 15px;
     cursor: pointer;
 }
 
-.header_news span:hover
+.header-news span:hover
 {
     opacity: 1;
-    color: rgb(184, 0, 0);
+    color: #b80000;
 }
 
 .info
@@ -140,13 +142,18 @@ input[id^='w-']
 
 .news a:hover
 {
-    color: rgb(184, 0, 0);
+    color: #b80000;
 }
 
-.name_currency
+.name-currency
 {
     font-weight: bold;
     margin-left: 15px;
+}
+
+.difference
+{
+    opacity: .6;
 }
 
 .ellipsis
@@ -192,7 +199,7 @@ input[id^='w-']
 
 .adv-link:hover
 {
-    color: rgb(184, 0, 0);
+    color: #b80000;
 }
 
 .adv-text
@@ -226,7 +233,7 @@ input[id^='w-']
 .find-everything span:hover
 {
     opacity: 1;
-    color: rgb(184, 0, 0);
+    color: #b80000;
     cursor: pointer;
 }
 
@@ -285,7 +292,7 @@ input[id^='w-']
 
 .adv-browser:hover
 {
-    color: rgb(184, 0, 0);
+    color: #b80000;
     cursor: pointer;
 }
 
@@ -304,17 +311,49 @@ input[id^='w-']
     margin-left: 15px;
 }
 
+.widget-column-1 p:not(.widget-header),
+.widget-column-2 p:not(.widget-header),
+.widget-column-3 p:not(.widget-header)
+{
+    margin: 10px 0;
+}
+
+.widget-column-1 section,
+.widget-column-2 section,
+.widget-column-3 section
+{
+    margin-bottom: 35px;
+}
+
 .widget-header
 {
+    height: 25px;
     color: #0054c9;
     font-size: 20px;
     margin: 15px 0 0;
 }
 
+.widget-header img
+{
+    vertical-align: middle;
+}
+
+.repeat
+{
+    position: absolute;
+    top: 160px;
+}
+
 .repeat:before
 {
+    opacity: .5;
     font-family: FontAwesome, fantasy;
     content: '\f01e';
+}
+
+.humor
+{
+    position: relative;
 }
 
 .next
@@ -348,7 +387,7 @@ input[id='joke-5']:checked ~ main .joke:not(:nth-of-type(5))
 .auto-news p:hover
 {
     cursor: pointer;
-    color: rgb(184, 0, 0);
+    color: #b80000;
 }
 
 .joke
@@ -377,14 +416,14 @@ input[id='joke-5']:checked ~ main .joke:not(:nth-of-type(5))
 .content:before
 {
     background: linear-gradient(to top,
-    rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    transparent, #fff);
     top: 38px;
 }
 
 .content:after
 {
     background: linear-gradient(to top,
-    rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    #fff, transparent);
     bottom: 0;
 }
 
@@ -467,7 +506,7 @@ aside form
     cursor: pointer;
 }
 
-.create_mail
+.create-mail
 {
     width: 50%;
     margin: 10px 5% 20px 0;
@@ -476,13 +515,13 @@ aside form
     opacity: .5;
 }
 
-.create_mail:hover
+.create-mail:hover
 {
     opacity: 1;
 }
 
 .email:hover,
-.create_mail:hover
+.create-mail:hover
 {
     color: #f00;
 }
@@ -523,7 +562,7 @@ input[id='w-settings']
 .settings:hover
 {
     cursor: pointer;
-    color: rgb(184, 0, 0);
+    color: #b80000;
 }
 
 input[id='w-settings']:checked ~ main .options,
@@ -607,7 +646,7 @@ id='w-auto-news']:not(:checked) ~ main
 .password
 {
     border: 1px solid #fff;
-    border-bottom: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid #a0a0a0;
     outline: none;
     height: 30px;
     width: 80%;
@@ -618,7 +657,7 @@ id='w-auto-news']:not(:checked) ~ main
     margin-bottom: 9px;
 }
 
-.password:focus ~ .label_other
+.password:focus ~ .label-other
 {
     margin-top: 19px;
 }
@@ -626,7 +665,7 @@ id='w-auto-news']:not(:checked) ~ main
 .login:focus,
 .password:focus
 {
-    border-bottom: 2px solid rgb(255, 219, 77);
+    border-bottom: 2px solid #ffdb4d;
 }
 
 .other
@@ -634,10 +673,11 @@ id='w-auto-news']:not(:checked) ~ main
     margin-left: 10px;
 }
 
-.label_other
+.label-other
 {
     float: left;
     margin-top: 20px;
+    margin-left: 10px;
     font-size: 12px;
 }
 
@@ -658,7 +698,7 @@ id='w-auto-news']:not(:checked) ~ main
 .icon
 {
     opacity: .2;
-    font-size: 24px;
+    font-size: 21px;
     margin: 20px 5px 0 3px;
     float: right;
 }
