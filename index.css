@@ -299,7 +299,7 @@ input[id^='w-']
 .car
 {
     width: 780px;
-    margin-left: 15px;
+    margin: 10px 0 20px 15px;
 }
 
 /*------ Widgets -------*/
@@ -330,11 +330,12 @@ input[id^='w-']
     height: 25px;
     color: #0054c9;
     font-size: 20px;
-    margin: 15px 0 0;
+    margin: 35px 0 0;
 }
 
 .widget-header img
 {
+    margin: 0 8px;
     vertical-align: middle;
 }
 
@@ -342,6 +343,11 @@ input[id^='w-']
 {
     position: absolute;
     top: 160px;
+}
+
+.auto-news .widget-header
+{
+    margin-top: 15px;
 }
 
 .repeat:before
